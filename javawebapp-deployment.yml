@@ -13,7 +13,7 @@ spec:
         name: javawebapp
     spec:
       containers:
-      - image: dockerhandson/java-web-app
+      - image:clarion01/java-web-app-docker:37 .  
         name: javawebapp
         ports:
         - name: javawebapp
@@ -31,5 +31,6 @@ spec:
   ports:
     - port: 8080
       targetPort: 8080
+      nodePort: 30001
   selector:
     name: javawebapp
